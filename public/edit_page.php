@@ -7,8 +7,7 @@
 <?php find_selected_page(); ?>
 
 <?php
-  // Unlike new_page.php, we don't need a subject_id to be sent
-  // We already have it stored in pages.subject_id.
+  
   if (!$current_page) {
     // page ID was missing or invalid or 
     // page couldn't be found in database

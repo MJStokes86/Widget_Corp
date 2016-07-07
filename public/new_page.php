@@ -7,7 +7,7 @@
 <?php find_selected_page(); ?>
 
 <?php
-  // Can't add a new page unless we have a subject as a parent!
+ 
   if (!$current_subject) {
     // subject ID was missing or invalid or 
     // subject couldn't be found in database
@@ -29,12 +29,11 @@ if (isset($_POST['submit'])) {
   if (empty($errors)) {
     // Perform Create
 
-    // make sure you add the subject_id!
+    
     $subject_id = $current_subject["id"];
     $menu_name = mysql_prep($_POST["menu_name"]);
     $position = (int) $_POST["position"];
     $visible = (int) $_POST["visible"];
-    // be sure to escape the content
     $content = mysql_prep($_POST["content"]);
   
     $query  = "INSERT INTO pages (";
@@ -54,7 +53,6 @@ if (isset($_POST['submit'])) {
     }
   }
 } else {
-  // This is probably a GET request
   
 } // end: if (isset($_POST['submit']))
 

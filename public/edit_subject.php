@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
 	
 	}
 } else {
-	// This is probably a GET request
+	
 	
 } // end: if (isset($_POST['submit']))
 
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 		<?php echo navigation($current_subject, $current_page); ?>
   </div>
   <div id="page">
-		<?php // $message is just a variable, doesn't use the SESSION
+		<?php 
 			if (!empty($message)) {
 				echo "<div class=\"message\">" . htmlentities($message) . "</div>";
 			}

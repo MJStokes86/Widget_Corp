@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
 	}
 	
 } else {
-	// This is probably a GET request
+	
 	redirect_to("new_subject.php");
 }
 

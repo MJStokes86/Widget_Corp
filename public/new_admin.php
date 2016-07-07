@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
     }
   }
 } else {
-  // This is probably a GET request
+  
   
 } // end: if (isset($_POST['submit']))
 
